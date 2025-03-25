@@ -1,0 +1,359 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+  margin-bottom: 2rem;
+}
+.questions {
+  display: flex;
+  margin: 2rem;
+}
+.question-select {
+  border: 1px solid black;
+  margin-left: 2rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+.pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+}
+.product-card {
+  border: 1px solid black;
+  margin: 5px;
+  width: 210px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-image {
+  height: 200px;
+  width: 200px;
+}
+.pagination-button {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  width: 35px;
+}
+.active-page {
+  background-color: greenyellow;
+}
+
+/*Auto Complete search*/
+.input-section {
+  background-color: rgb(218, 218, 218);
+  padding: 10px;
+  border-radius: 10px;
+}
+.input {
+  border: 1px solid grey;
+  width: 500px;
+  padding: 5px;
+}
+.results {
+  margin-top: 10px;
+  max-height: 500px;
+  overflow-x: scroll;
+}
+.item {
+  margin-top: 10px;
+}
+.item:hover {
+  background-color: rgb(184, 184, 184);
+}
+
+/*Progressbar*/
+.outer {
+  width: 1000px;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.inner {
+  background-color: rgb(120, 168, 48);
+  height: 30px;
+  border-radius: 20px;
+  text-align: right;
+  transition: 0.5s ease-in;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.progress-value {
+  margin-right: 2px;
+}
+
+/* File explorer*/
+.folder-item {
+  padding-left: 30px;
+}
+.folder-arrow {
+  cursor: pointer;
+  margin-right: 5px;
+}
+.add-button {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Tab Form */
+
+.tab-header {
+  display: flex;
+}
+.tab {
+  padding: 5px;
+  border: 1px solid black;
+}
+.tab-body {
+  width: 500px;
+  height: 300px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.active-tab {
+  background-color: greenyellow;
+}
+.inputBox {
+  border: 1px solid black;
+}
+/*File structure*/
+.folder-next {
+  margin-left: 30px;
+}
+.folder {
+  padding: 5px;
+  margin: 3px;
+  cursor: pointer;
+}
+.add {
+  border: 1px solid black;
+  padding: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/*tic tac toe*/
+.game__board {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cell {
+  border: 1px solid black;
+  height: 33.33%;
+  width: 33.33%;
+}
+.game__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  button {
+    border: 1px solid black;
+    padding: 3px;
+  }
+}
+/*Password genarator*/
+.password__genarator {
+  width: 500px;
+  padding: 10px;
+  background-color: rgb(192, 211, 188);
+}
+.password__genarator_title {
+  display: flex;
+  justify-content: space-between;
+}
+.copy__button {
+  background-color: rgb(98, 100, 95);
+  padding: 7px;
+}
+.password__length {
+  width: 100%;
+}
+.password__rules {
+  margin-top: 1rem;
+}
+.password__checkbox {
+  margin-right: 0.5rem;
+}
+.checkbox__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  label {
+    width: 220px;
+  }
+}
+.genarate__button {
+  background-color: darkolivegreen;
+  width: 100%;
+  padding: 10px;
+  margin-top: 1rem;
+}
+.length__limit {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Animated progresbar*/
+
+.progressbar {
+  margin-bottom: 1rem;
+  border: 1px solid grey;
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.animated_progressbar {
+  width: 400px;
+}
+.percentage {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  z-index: 2;
+}
+.progressbar__percentage {
+  background-color: green;
+  height: 30px;
+  transform-origin: left;
+}
+
+/* MemmoryGame */
+.memmory__game {
+  text-align: center;
+}
+.memmory__game_top {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.memmory__game_input {
+  width: 4rem;
+  margin-left: 2rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+.board__cell {
+  padding: 2rem 2.5rem;
+  background-color: rgb(206, 206, 206);
+  margin: 3px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.board {
+  display: grid;
+  margin-top: 2rem;
+}
+.flipped {
+  background-color: rgb(93, 93, 170);
+}
+.reveiled {
+  background-color: rgb(161, 220, 72);
+}
+.game__message {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    background-color: rgb(161, 220, 72);
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+}
+
+/* Multi Select */
+.multiselect {
+  width: 100%;
+}
+.multiselect__container {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 5px;
+  max-height: 81px;
+  overflow: scroll;
+}
+.multiselect__input {
+  outline: none;
+}
+.multiselect__search_results {
+  width: 100%;
+  border: 1px solid grey;
+  margin-top: 2px;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow: scroll;
+}
+.multiselect__search_results_option {
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  img {
+    width: 25px;
+    margin-right: 3px;
+  }
+}
+.multiselect__search_results_option:hover {
+  background-color: rgb(218, 218, 218);
+}
+.multiselect__sselected_results {
+  padding: 2px;
+  padding-right: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  img {
+    width: 25px;
+    margin-right: 3px;
+  }
+  color: #000000;
+  font-size: 13px;
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 8px;
+  background-color: rgb(235, 235, 235);
+}
+.select__delete {
+  margin-left: 5px;
+  border-radius: 10px;
+  width: 19px;
+  text-align: center;
+  background-color: rgb(234, 114, 114);
+}

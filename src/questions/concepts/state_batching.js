@@ -1,0 +1,5 @@
+/* 
+state batching
+
+multiple state updates  that are triggered from the same function are batched togather to perform only one component re execution.
+*/

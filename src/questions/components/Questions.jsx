@@ -2,31 +2,59 @@ import { Outlet, useNavigate } from "react-router-dom";
 
 const Questions = () => {
   const questions = [
-    { id: 1, key: "Auto Complete Search", value: "/autoCompleteSearch" },
+    {
+      id: 1,
+      key: "Auto Complete Search",
+      value: "/interviewQuestions/autoCompleteSearch",
+    },
     {
       id: 2,
       key: "Debounce",
-      value: "/debounce",
+      value: "/interviewQuestions/debounce",
     },
     {
       id: 3,
       key: "Dependent dropdown",
-      value: "/dropdown",
+      value: "/interviewQuestions/dropdown",
     },
-    { id: 4, key: "Image slider", value: "/imageSlider" },
-    { id: 5, key: "Pagination", value: "/pagination" },
-    { id: 6, key: "Phone number formating", value: "/phoneNumber" },
-    { id: 7, key: "Real time search bar", value: "/realTimeFilter" },
-    { id: 8, key: "Window resize hook", value: "/useWindowSizeHook" },
-    { id: 9, key: "Progressbar", value: "/progressbar" },
-    { id: 10, key: "File Explorer", value: "/fileExplorer" },
-    { id: 11, key: "File Structure", value: "/fileStructure" },
-    { id: 12, key: "Tab Form", value: "/tabForm" },
-    { id: 13, key: "Tic tac toe", value: "/ticTacToe" },
-    { id: 14, key: "Password genarator", value: "/passwordGenarator" },
-    { id: 15, key: "Animated progressbar", value: "/animatedProgressBar" },
-    { id: 16, key: "Memmory Game", value: "/memmoryGame" },
-    { id: 17, key: "Multi Select", value: "/multiSelect" },
+    { id: 4, key: "Image slider", value: "/interviewQuestions/imageSlider" },
+    { id: 5, key: "Pagination", value: "/interviewQuestions/pagination" },
+    {
+      id: 6,
+      key: "Phone number formating",
+      value: "/interviewQuestionsphoneNumber",
+    },
+    {
+      id: 7,
+      key: "Real time search bar",
+      value: "/interviewQuestionsrealTimeFilter",
+    },
+    {
+      id: 8,
+      key: "Window resize hook",
+      value: "/interviewQuestionsuseWindowSizeHook",
+    },
+    { id: 9, key: "Progressbar", value: "/interviewQuestionsprogressbar" },
+    { id: 10, key: "File Explorer", value: "/interviewQuestionsfileExplorer" },
+    {
+      id: 11,
+      key: "File Structure",
+      value: "/interviewQuestionsfileStructure",
+    },
+    { id: 12, key: "Tab Form", value: "/interviewQuestionstabForm" },
+    { id: 13, key: "Tic tac toe", value: "/interviewQuestionsticTacToe" },
+    {
+      id: 14,
+      key: "Password genarator",
+      value: "/interviewQuestionspasswordGenarator",
+    },
+    {
+      id: 15,
+      key: "Animated progressbar",
+      value: "/interviewQuestionsanimatedProgressBar",
+    },
+    { id: 16, key: "Memmory Game", value: "/interviewQuestionsmemmoryGame" },
+    { id: 17, key: "Multi Select", value: "/interviewQuestionsmultiSelect" },
   ];
   const navigate = useNavigate();
 

@@ -23,75 +23,75 @@ import MultiSelect from "./questions/components/MultiSelect";
 function App() {
   const routes = createBrowserRouter([
     {
-      path: "/",
+      path: "/interviewQuestions",
       element: <Questions />,
       children: [
         {
-          path: "/autoCompleteSearch",
+          path: "/interviewQuestions/autoCompleteSearch",
           element: <AutoCompleteSearch />,
         },
         {
-          path: "/debounce",
+          path: "/interviewQuestions/debounce",
           element: <Debounce />,
         },
         {
-          path: "/dropdown",
+          path: "/interviewQuestions/dropdown",
           element: <Dropdown />,
         },
         {
-          path: "/imageSlider",
+          path: "/interviewQuestions/imageSlider",
           element: <ImageSlider />,
         },
         {
-          path: "/pagination",
+          path: "/interviewQuestions/pagination",
           element: <Pagination />,
         },
         {
-          path: "/phoneNumber",
+          path: "/interviewQuestions/phoneNumber",
           element: <PhoneNumber />,
         },
         {
-          path: "/realTimeFilter",
+          path: "/interviewQuestions/realTimeFilter",
           element: <RealTimeFilter />,
         },
         {
-          path: "/useWindowSizeHook",
+          path: "/interviewQuestions/useWindowSizeHook",
           element: <WindowSize />,
         },
         {
-          path: "/progressbar",
+          path: "/interviewQuestions/progressbar",
           element: <Progresssbar />,
         },
         {
-          path: "/fileStructure",
+          path: "/interviewQuestions/fileStructure",
           element: <FileStructure />,
         },
         {
-          path: "/fileExplorer",
+          path: "/interviewQuestions/fileExplorer",
           element: <FileExplorer />,
         },
         {
-          path: "/tabForm",
+          path: "/interviewQuestions/tabForm",
           element: <TabForm />,
         },
         {
-          path: "/ticTacToe",
+          path: "/interviewQuestions/ticTacToe",
           element: <TicTacToe />,
         },
         {
-          path: "/passwordGenarator",
+          path: "/interviewQuestions/passwordGenarator",
           element: <PasswordGenerator />,
         },
         {
-          path: "/animatedProgressBar",
+          path: "/interviewQuestions/animatedProgressBar",
           element: <AnimatedProgressBar />,
         },
         {
-          path: "/memmoryGame",
+          path: "/interviewQuestions/memmoryGame",
           element: <MemmoryGame />,
         },
         {
-          path: "/multiSelect",
+          path: "/interviewQuestions/multiSelect",
           element: <MultiSelect />,
         },
       ],

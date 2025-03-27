@@ -22,39 +22,39 @@ const Questions = () => {
     {
       id: 6,
       key: "Phone number formating",
-      value: "/interviewQuestionsphoneNumber",
+      value: "/interviewQuestions/phoneNumber",
     },
     {
       id: 7,
       key: "Real time search bar",
-      value: "/interviewQuestionsrealTimeFilter",
+      value: "/interviewQuestions/realTimeFilter",
     },
     {
       id: 8,
       key: "Window resize hook",
-      value: "/interviewQuestionsuseWindowSizeHook",
+      value: "/interviewQuestions/useWindowSizeHook",
     },
-    { id: 9, key: "Progressbar", value: "/interviewQuestionsprogressbar" },
-    { id: 10, key: "File Explorer", value: "/interviewQuestionsfileExplorer" },
+    { id: 9, key: "Progressbar", value: "/interviewQuestions/progressbar" },
+    { id: 10, key: "File Explorer", value: "/interviewQuestions/fileExplorer" },
     {
       id: 11,
       key: "File Structure",
-      value: "/interviewQuestionsfileStructure",
+      value: "/interviewQuestions/fileStructure",
     },
-    { id: 12, key: "Tab Form", value: "/interviewQuestionstabForm" },
-    { id: 13, key: "Tic tac toe", value: "/interviewQuestionsticTacToe" },
+    { id: 12, key: "Tab Form", value: "/interviewQuestions/tabForm" },
+    { id: 13, key: "Tic tac toe", value: "/interviewQuestions/ticTacToe" },
     {
       id: 14,
       key: "Password genarator",
-      value: "/interviewQuestionspasswordGenarator",
+      value: "/interviewQuestions/passwordGenarator",
     },
     {
       id: 15,
       key: "Animated progressbar",
-      value: "/interviewQuestionsanimatedProgressBar",
+      value: "/interviewQuestions/animatedProgressBar",
     },
-    { id: 16, key: "Memmory Game", value: "/interviewQuestionsmemmoryGame" },
-    { id: 17, key: "Multi Select", value: "/interviewQuestionsmultiSelect" },
+    { id: 16, key: "Memmory Game", value: "/interviewQuestions/memmoryGame" },
+    { id: 17, key: "Multi Select", value: "/interviewQuestions/multiSelect" },
   ];
   const navigate = useNavigate();
 

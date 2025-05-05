@@ -55,6 +55,7 @@ const Questions = () => {
     },
     { id: 16, key: "Memmory Game", value: "/interviewQuestions/memmoryGame" },
     { id: 17, key: "Multi Select", value: "/interviewQuestions/multiSelect" },
+    // { id: 18, key: "Js Questions", value: "/interviewQuestions/jsQuestions" },
   ];
   const navigate = useNavigate();
 

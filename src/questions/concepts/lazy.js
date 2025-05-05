@@ -22,15 +22,15 @@ function App() {
   );
 }
 
-export default App;
+export { App };
 
 //  Lazy Loading with React Router
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
-const HomeS = lazy(() => import("./Home"));
-const AboutS = lazy(() => import("./About"));
+const HomeS = lazy(() => import("./HomeS"));
+const AboutS = lazy(() => import("./AboutS"));
 
 function AppS() {
   return (
@@ -49,4 +49,50 @@ export default AppS;
 
 // Lazy Loading Images
 
-<img src="large-image.jpg" loading="lazy" alt="Large Image" />
+<img src="large-image.jpg" loading="lazy" alt="Large Image" />;
+
+// createBrowserRouter
+import { createBrowserRouter } from "react-router-dom";
+import { Suspense, lazy } from "react";
+
+const Layout = lazy(() => import("./pages/Layout"));
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Loader = () => <div>Loading...</div>;
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <Home />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <About />
+      </Suspense>
+    ),
+    children: [
+      {
+        index: true,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Home />
+          </Suspense>
+        ),
+      },
+      {
+        path: "about",
+        element: (
+          <Suspense fallback={<Loader />}>
+            <About />
+          </Suspense>
+        ),
+      },
+    ],
+  },
+]);

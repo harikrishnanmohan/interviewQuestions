@@ -19,6 +19,7 @@ import PasswordGenerator from "./questions/components/PasswordGenerator";
 import AnimatedProgressBar from "./questions/components/AnimatedProgressBar";
 import MemmoryGame from "./questions/components/MemmoryGame";
 import MultiSelect from "./questions/components/MultiSelect";
+// import JsQuestions from "./questions/components/JsQuestions";
 
 function App() {
   const routes = createBrowserRouter([
@@ -94,6 +95,10 @@ function App() {
           path: "/interviewQuestions/multiSelect",
           element: <MultiSelect />,
         },
+        // {
+        //   path: "/interviewQuestions/jsQuestions",
+        //   element: <JsQuestions />,
+        // },
       ],
     },
   ]);

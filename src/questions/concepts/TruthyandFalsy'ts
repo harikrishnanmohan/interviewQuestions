@@ -1,0 +1,21 @@
+/*
+In JavaScript, the following values are considered "falsy" — meaning they evaluate to false when used in a Boolean context (like inside an if statement):
+
+✅ Falsy values in JavaScript:
+false
+0
+-0
+0n (BigInt zero)
+"" (empty string)
+null
+undefined
+NaN
+
+
+✅ Truthy values
+"0" (string zero)
+"false" (non-empty string)
+[] (empty array)
+{} (empty object)
+function() {} (function)
+*/
